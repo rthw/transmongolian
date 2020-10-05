@@ -6,7 +6,16 @@
   <body>
     <a-scene stats vr-mode-ui="enabled: false">
       <a-entity light="type: ambient; color: #EEE; intensity: 2" position="4 1 8"></a-entity>
-      <a-entity camera look-controls touch-controls wasd-controls="acceleration:200" position="0 1.55 0"></a-entity>
+      <!--a-entity camera look-controls touch-controls wasd-controls="acceleration:200" position="0 1.55 0"></a-entity-->
+      
+      <a-entity id="rig"
+      movement-controls
+      position="25 0 25">
+<a-entity camera
+        position="0 1.6 0"
+        look-controls="pointerLockEnabled: true"></a-entity>
+</a-entity>
+
 
       <a-sky   color="#333333"></a-sky>
       <a-box   width="6"    height="3"    depth="0.1" position="-0.65    1.55 -3.6"                                                              ></a-box>
