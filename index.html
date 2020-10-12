@@ -10,7 +10,12 @@
     <a-scene vr-mode-ui="enabled: false">
       <a-entity light="type: ambient; color: #EEE; intensity: 2" position="4 1 8"></a-entity>
       <!--"constrainToNavMesh: true"-->
-   
+
+<a-assets>
+        <a-asset-item id="tree" src="/"></a-asset-item>
+</a-assets>
+    
+<a-entity gltf-model="#tree"></a-entity>
         
 <a-entity id="rig"
           movement-controls='speed:0.3'
@@ -20,6 +25,7 @@
             position="0 1.6 0"
             look-controls></a-entity>
 </a-entity>
+
 
       <a-sky   color="#333333"></a-sky>
       <a-box   width="24,5"    height="9"    depth="1" position=" -1  1.55  -10.8"                          static-body                       ></a-box>
